@@ -5,4 +5,4 @@ Hi, this is a work in progress
 TODO:
 * [x] ~~*Data Cleaning*~~
 * [ ] Exploratory Data Analysis (Fazli/Faris)
-* [ ] Generate heatmap (Aidil)
+* [x] ~~*Generate heatmap (Aidil)*~~
