@@ -3,7 +3,7 @@
 **NTU SC1015 Mini Project**
 
 ## About
-Each year, 1.35 million p.eople are killed on roadways around the world. Crash injuries are estimated to be the eighth leading cause of death globally for all age groups and the leading cause of death for children and young people 5–29 years of age. More people now die in crashes than from HIV/AIDS.
+Each year, 1.35 million p.eople are killed on roadways around the world. Crash injuries are estimated to be the eighth leading cause of death globally for all age groups and the leading cause of death for children and young people 5–29 years of age.
 
 Accidents are an unfortunate reality of our daily lives, impacting individuals, families, and communities across the United States. Understanding the causes, patterns, and consequences of accidents is of paramount importance for public safety, transportation planning, and policy-making. In this notebook, we delve into the world of accidents, specifically focusing on accidents that occur on the roads and highways of the United States.
 
@@ -71,9 +71,13 @@ We performed the following:
     - Our observation could be attributed to the fact that `Highway` has a higher average speed and thus, more accidents are prone to occur
 5. **Date & Time**
     - We analyse the data using `Start_Time`, which we further seperated into `Month`, `Day_Name` and `Hour` using the `Datetime` module.
-    - When looking into `Month`, we observed that there is peak in accidents around the `Month = 12 (December)` and a minimum around `Month = 7 (July)`. From this, we created 2 new columns `Season`, to indicate which season the accident occurs and `Is_Christmas`, to indicate whether the accident occurs during the christmas period.
-    - When looking into `Day_Name`, we notice that most accidents occurs during the weekday, which could be attributed to higher traffic during weekdays as people need to go to work. Thus, we created a new column called `Is_Weekday`
-    - Similarly, when looking into  `Hour`, we notice that there is a peak in accidents during the peak hours, with the timing of `0600-1000` and `1600-1900`. This could be attributed to higher traffic from people going and coming back from work. We also then created a new column called `Is_Rush_Hour`
+    - `Month`: We notice accidents peaked at the end of the year and drops in the middle of the year
+        - More people travelling during christmas period which is during winter causes peak
+    - `Day_Name`: Most accidents occurs on the weekday
+        - More people travel during weekday due to work
+    - `Hour`: Peak in morning and evening period
+        - Peak can be attributed to people travelling and coming back to work
+    - From the above analysis, we created 4 new columns, `Is_Rush_Hour`, `Is_Christmas`, `Is_Weekday`, `Season`
 6. **Season**
     - The column `Season`, which was created during our Date & Time analysis, shows that most accidents occurs during the `Winter`. However, this is only true for `Severity = 2`. The remaining `Severity` levels shows a similar trend where most accidents occurs during `Spring`
 7. **Boolean Values**
@@ -120,7 +124,19 @@ We use 2 different machine learning methods in order to predict `Severity` based
     - learn complex patterns and relationships in data through the iterative adjustment of weights and biases, guided by optimization algorithms during the training process
 
 ## 5. Conclusion
-idk
+1. Drivers should pay more attention when roads are busy as most accidents occurs during this period
+2. Installation of more road features can lead to a reduction in accidents
+3. Drivers should not be complacent during good road and weather condition as most accidents occurs during this period
+
+## What we learned
+1. Geospatial analysis using `Folium` module
+2. The different oversampling methods
+    - SMOTE
+    - SMOTEENN
+    - SMOTETomek
+3. The diffenent machine learning models
+    - Random Forest
+    - Neural Network
 
 ## References
 - https://www.kaggle.com/code/muhammadaidilfirdaus/sc1015-geospatial-analysis#Mapping-Los-Angeles-Car-Accidents--Using-Folium-Heatmap
