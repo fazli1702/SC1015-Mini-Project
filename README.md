@@ -122,16 +122,16 @@ We use 2 different machine learning methods in order to predict `Severity` based
 
 2. **Neural Network**
     - This neural network model is designed to classify the severity levels of car accidents based on various features such as location, weather, and traffic conditions.
-    - Model Overview
-          1. **Architecture:** The model architecture consists of multiple hidden layers with ReLU activation functions, followed by a softmax activation function in the output layer for multi-                  class classification.
-          2. **Dropout:** Dropout layers are included in each hidden layer to prevent overfitting and improve generalization
-          3. **Loss Function:** Categorical cross-entropy loss function is used to measure the difference between predicted and actual severity levels
-          4. **Optimizer:** Adam optimizer is used to minimize the loss function during training
-          5. **Metrics:** Accuracy, precision, and recall metrics are used to evaluate the model's performance.
-    - SMOTETomek Model Performance
-          1. **Training Accuracy:** Achieved a training accuracy of `0.90`, indicating the model's ability to fit the training data
-          2. **Test Accuracy:** Achieved a test accuracy of `0.82`, demonstrating the model's ability to generalize to unseen data
-          3. **Hyperparameter Tuning:** Tuned hyperparameters to improve generalization and reduce overfitting.
+    - **Model Overview**
+          - **Architecture:** The model architecture consists of multiple hidden layers with ReLU activation functions, followed by a softmax activation function in the output layer for multi-                  class classification.
+          - **Dropout:** Dropout layers are included in each hidden layer to prevent overfitting and improve generalization
+          - **Loss Function:** Categorical cross-entropy loss function is used to measure the difference between predicted and actual severity levels
+          - **Optimizer:** Adam optimizer is used to minimize the loss function during training
+          - **Metrics:** Accuracy, precision, and recall metrics are used to evaluate the model's performance.
+    - **SMOTETomek Model Performance**
+          - **Training Accuracy:** Achieved a training accuracy of `0.90`, indicating the model's ability to fit the training data
+          - **Test Accuracy:** Achieved a test accuracy of `0.82`, demonstrating the model's ability to generalize to unseen data
+          - **Hyperparameter Tuning:** Tuned hyperparameters to improve generalization and reduce overfitting.
 
 ## 5. Conclusion
 1. Drivers should pay more attention when roads are busy as most accidents occurs during this period
