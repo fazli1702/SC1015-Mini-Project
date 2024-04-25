@@ -18,12 +18,12 @@ Accidents are an unfortunate reality of our daily lives, impacting individuals, 
 Given the different information surrounding an accident, we want to predict the `Severity` of an accident as accurately as possible. We also want to find which features influence `Severity` the most.
 
 ## Dataset
-The dataset used for this project is located [here](https://drive.google.com/file/d/1U3u8QYzLjnEaSurtZfSAS_oh9AT2Mn8X/edit)
+The dataset used for this project is located [here](https://drive.google.com/file/d/1U3u8QYzLjnEaSurtZfSAS_oh9AT2Mn8X/edit)  
 The above dataset is sampled from the original dataset located [here](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents)
 
 ## Presentation
-[Video](https://www.youtube.com/watch?v=XPM3hRmWjHE)
-[Slides]()
+[Video](https://www.youtube.com/watch?v=XPM3hRmWjHE)  
+[Slides](https://github.com/fazli1702/SC1015-Mini-Project/blob/main/presentation/SC1015%20Presentation.pptx)
 
 ## Table of Content
 1. Data Cleaning
